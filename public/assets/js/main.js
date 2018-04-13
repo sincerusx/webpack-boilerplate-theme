@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "a2211bf99da84a3ca06f"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "8bd0d8126f793d6085b2"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -722,10 +722,18 @@
 /******/ 	__webpack_require__.h = function() { return hotCurrentHash; };
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return hotCreateRequire("./res/index.js")(__webpack_require__.s = "./res/index.js");
+/******/ 	return hotCreateRequire("./index.js")(__webpack_require__.s = "./index.js");
 /******/ })
 /************************************************************************/
 /******/ ({
+
+/***/ "./index.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\n__webpack_require__(\"./res/styles/main.scss\");\n\nvar _App = __webpack_require__(\"./src/App.js\");\n\nvar _App2 = _interopRequireDefault(_App);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n_App2.default.greeting();//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9pbmRleC5qcy5qcyIsInNvdXJjZXMiOlsid2VicGFjazovLy9pbmRleC5qcz8xNjg3Il0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCAnLi9yZXMvc3R5bGVzL21haW4uc2Nzcyc7XG5pbXBvcnQgQXBwIGZyb20gJy4vc3JjL0FwcCc7XG5cblxuQXBwLmdyZWV0aW5nKCk7XG5cblxuLy8gV0VCUEFDSyBGT09URVIgLy9cbi8vIGluZGV4LmpzIl0sIm1hcHBpbmdzIjoiOztBQUFBO0FBQ0E7QUFBQTtBQUNBOzs7OztBQUVBIiwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./index.js\n");
+
+/***/ }),
 
 /***/ "./node_modules/css-hot-loader/hotModuleReplacement.js":
 /***/ (function(module, exports, __webpack_require__) {
@@ -935,18 +943,18 @@ eval("module.exports = function(module) {\r\n\tif(!module.webpackPolyfill) {\r\n
 
 /***/ }),
 
-/***/ "./res/index.js":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-eval("\n\n__webpack_require__(\"./res/styles/main.scss\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9yZXMvaW5kZXguanMuanMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vcmVzL2luZGV4LmpzPzViZWMiXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0ICcuL3N0eWxlcy9tYWluLnNjc3MnO1xuXG5cbi8vIFdFQlBBQ0sgRk9PVEVSIC8vXG4vLyByZXMvaW5kZXguanMiXSwibWFwcGluZ3MiOiI7O0FBQUEiLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./res/index.js\n");
-
-/***/ }),
-
 /***/ "./res/styles/main.scss":
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("// removed by extract-text-webpack-plugin\n    if(true) {\n      // 1523611919056\n      var cssReload = __webpack_require__(\"./node_modules/css-hot-loader/hotModuleReplacement.js\")(module.i, {\"fileMap\":\"{fileName}\"});\n      module.hot.dispose(cssReload);\n      module.hot.accept(undefined, cssReload);\n    }\n  //# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9yZXMvc3R5bGVzL21haW4uc2Nzcy5qcyIsInNvdXJjZXMiOlsid2VicGFjazovLy8uL3Jlcy9zdHlsZXMvbWFpbi5zY3NzPzYyZDciXSwic291cmNlc0NvbnRlbnQiOlsiLy8gcmVtb3ZlZCBieSBleHRyYWN0LXRleHQtd2VicGFjay1wbHVnaW5cbiAgICBpZihtb2R1bGUuaG90KSB7XG4gICAgICAvLyAxNTIzNjExOTE5MDU2XG4gICAgICB2YXIgY3NzUmVsb2FkID0gcmVxdWlyZShcIiEuLi8uLi9ub2RlX21vZHVsZXMvY3NzLWhvdC1sb2FkZXIvaG90TW9kdWxlUmVwbGFjZW1lbnQuanNcIikobW9kdWxlLmlkLCB7XCJmaWxlTWFwXCI6XCJ7ZmlsZU5hbWV9XCJ9KTtcbiAgICAgIG1vZHVsZS5ob3QuZGlzcG9zZShjc3NSZWxvYWQpO1xuICAgICAgbW9kdWxlLmhvdC5hY2NlcHQodW5kZWZpbmVkLCBjc3NSZWxvYWQpO1xuICAgIH1cbiAgXG5cblxuLy8vLy8vLy8vLy8vLy8vLy8vXG4vLyBXRUJQQUNLIEZPT1RFUlxuLy8gLi9yZXMvc3R5bGVzL21haW4uc2Nzc1xuLy8gbW9kdWxlIGlkID0gLi9yZXMvc3R5bGVzL21haW4uc2Nzc1xuLy8gbW9kdWxlIGNodW5rcyA9IDAiXSwibWFwcGluZ3MiOiJBQUFBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0EiLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./res/styles/main.scss\n");
+eval("// removed by extract-text-webpack-plugin\n    if(true) {\n      // 1523614254021\n      var cssReload = __webpack_require__(\"./node_modules/css-hot-loader/hotModuleReplacement.js\")(module.i, {\"fileMap\":\"{fileName}\"});\n      module.hot.dispose(cssReload);\n      module.hot.accept(undefined, cssReload);\n    }\n  //# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9yZXMvc3R5bGVzL21haW4uc2Nzcy5qcyIsInNvdXJjZXMiOlsid2VicGFjazovLy8uL3Jlcy9zdHlsZXMvbWFpbi5zY3NzPzYyZDciXSwic291cmNlc0NvbnRlbnQiOlsiLy8gcmVtb3ZlZCBieSBleHRyYWN0LXRleHQtd2VicGFjay1wbHVnaW5cbiAgICBpZihtb2R1bGUuaG90KSB7XG4gICAgICAvLyAxNTIzNjE0MjU0MDIxXG4gICAgICB2YXIgY3NzUmVsb2FkID0gcmVxdWlyZShcIiEuLi8uLi9ub2RlX21vZHVsZXMvY3NzLWhvdC1sb2FkZXIvaG90TW9kdWxlUmVwbGFjZW1lbnQuanNcIikobW9kdWxlLmlkLCB7XCJmaWxlTWFwXCI6XCJ7ZmlsZU5hbWV9XCJ9KTtcbiAgICAgIG1vZHVsZS5ob3QuZGlzcG9zZShjc3NSZWxvYWQpO1xuICAgICAgbW9kdWxlLmhvdC5hY2NlcHQodW5kZWZpbmVkLCBjc3NSZWxvYWQpO1xuICAgIH1cbiAgXG5cblxuLy8vLy8vLy8vLy8vLy8vLy8vXG4vLyBXRUJQQUNLIEZPT1RFUlxuLy8gLi9yZXMvc3R5bGVzL21haW4uc2Nzc1xuLy8gbW9kdWxlIGlkID0gLi9yZXMvc3R5bGVzL21haW4uc2Nzc1xuLy8gbW9kdWxlIGNodW5rcyA9IDAiXSwibWFwcGluZ3MiOiJBQUFBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0EiLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./res/styles/main.scss\n");
+
+/***/ }),
+
+/***/ "./src/App.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nvar App = function () {\n  function App() {\n    _classCallCheck(this, App);\n  }\n\n  _createClass(App, null, [{\n    key: 'greeting',\n    value: function greeting() {\n      console.log('Hello, world 😌');\n    }\n  }]);\n\n  return App;\n}();\n\nexports.default = App;//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvQXBwLmpzLmpzIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vL3NyYy9BcHAuanM/MTRiMSJdLCJzb3VyY2VzQ29udGVudCI6WyJcbmV4cG9ydCBkZWZhdWx0IGNsYXNzIEFwcCB7XG4gIHN0YXRpYyBncmVldGluZyAoKSB7XG4gICAgY29uc29sZS5sb2coJ0hlbGxvLCB3b3JsZCDwn5iMJyk7XG4gIH1cbn1cblxuXG4vLyBXRUJQQUNLIEZPT1RFUiAvL1xuLy8gc3JjL0FwcC5qcyJdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7OztBQUNBOzs7Ozs7O0FBQ0E7QUFDQTtBQUNBOzs7Ozs7QUFIQSIsInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./src/App.js\n");
 
 /***/ })
 
