@@ -565,4 +565,6 @@ bh_unicode_properties.cache
 # https://packagecontrol.io/packages/sublime-github
 GitHub.sublime-settings
 
+public/assets/*
+/public/*.hot-update.js
 /public/*.hot-update.json
