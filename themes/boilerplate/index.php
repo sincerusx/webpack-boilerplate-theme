@@ -24,7 +24,7 @@
 	<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 </head>
 <body>
-<?php use Exception;
+<?php
 
 $requestUri = strtolower( ltrim($_SERVER['REQUEST_URI'], '/') );
 
