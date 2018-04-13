@@ -33,6 +33,6 @@
     "watch": "webpack --watch"
   },
   "keywords": [],
-  "author": "",
+  "author": "Liam Nelson",
   "license": "ISC"
 }
