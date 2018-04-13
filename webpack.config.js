@@ -4,7 +4,7 @@ const ExtractTextPlugin  = require('extract-text-webpack-plugin')
 const BrowserSyncPlugin  = require('browser-sync-webpack-plugin')
 
 module.exports = {
-  entry: './res/index.js',
+  entry: './src/index.js',
   output: {
     path: path.join(__dirname, 'public'),
     // publicPath: '/',
@@ -47,5 +47,3 @@ module.exports = {
     rules: require('./config/webpack.config.rules')
   }
 };
-
-//sudo yarn add --save-dev -g  --insafe-perm-=true - allow-root
